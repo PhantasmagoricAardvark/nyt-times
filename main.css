@@ -49,10 +49,10 @@ table {
 section {
 	display: grid;
 	background-color: aliceblue;
-	grid-template-columns: 3fr 5fr 3fr;
+	grid-template-columns: 3fr 7fr 3fr;
 }
 
-section > * {
+.main-section	 > * {
 	grid-column: 2 / -2;
 }
 
@@ -69,4 +69,22 @@ h1 {
 span {
 	font-size: small;
 	color: grey;
+}
+
+.wrapper {
+	display: grid;
+}
+
+.images {
+	display: grid;
+	grid-column: 1;
+	grid-template-columns: 1fr 1fr 1fr;
+	overflow: hidden;
+}
+
+.img1 {
+	background-image: url("1.png");
+	background-position: top;
+	background-size: cover;
+	width: 400%;
 }
