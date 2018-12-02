@@ -73,6 +73,7 @@ span {
 
 .wrapper {
 	display: grid;
+	margin: 2rem 0;
 }
 
 .images {
@@ -80,11 +81,23 @@ span {
 	grid-column: 1;
 	grid-template-columns: 1fr 1fr 1fr;
 	overflow: hidden;
+	grid-gap: 10px;
 }
 
-.img1 {
-	background-image: url("1.png");
-	background-position: top;
-	background-size: cover;
-	width: 400%;
+.images img {
+	width: 100%;
+	height: 100%;
+}
+
+.story-footer:before {
+	margin-bottom: 1rem;
+	width: 5.3rem;
+	height: 1px;
+	content: "";
+	background-color: black;
+	display: inline-block;
+}
+
+.story-footer {
+	margin-bottom: 2rem;
 }
