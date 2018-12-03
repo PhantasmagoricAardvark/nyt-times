@@ -84,7 +84,6 @@ span {
 
 .images {
 	display: grid;
-	grid-column: 1;
 	grid-template-columns: 1fr 1fr 1fr;
 	overflow: hidden;
 	grid-gap: 10px;
@@ -158,10 +157,19 @@ h5 {
 }
 
 
+.suggestions-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 10fr 1fr;
+}
+
+.suggestions {
+	grid-column: 2 / -2;
+}
 
 .suggestions1 {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-gap: 10px;
 }
 
 .suggestions1 img {
