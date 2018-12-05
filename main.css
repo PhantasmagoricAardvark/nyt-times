@@ -182,21 +182,49 @@ h5 {
 
 .suggestions1 h1 {
 	grid-column: 1 / -1;
+	border-top: 1px solid black;
+	padding-top: 1rem;
+	margin-bottom: 0;
 }	
 
 
 
 .trending-suggestions {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 2rem;
-	width: 18rem;
+	display: flex;	
+	flex-direction: column;
 }
 
-.trending-suggestions > * {
-	border-bottom: 1px solid rgb(226, 226, 226)
+.trending-suggestions p {
+	border-bottom: 1px solid rgb(226, 226, 226);
+	padding: 1rem 0;
+}
+
+.trending-suggestions p:nth-of-type(1) {
+	border-top: 1px solid black;
 }
 
 .trending-suggestions p:last-child {
 	border: none;
+}
+
+.trending-suggestions h1 {
+	border-top: 1px solid black;
+	padding-top: 1rem;
+	margin-bottom: 1.2rem;
+}
+
+
+.sugg span:nth-of-type(1) {
+	text-align: right;
+	display: block;
+	font-size: 9px;
+}
+
+.sugg p {
+	margin: 0.3rem 0;
+	line-height: 1.2rem;
+}
+
+.sugg-odd p {
+	margin: 0.9rem 0;
 }
