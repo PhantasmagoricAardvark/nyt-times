@@ -189,6 +189,8 @@ h5 {
 
 
 
+
+
 .trending-suggestions {
 	display: flex;	
 	flex-direction: column;
@@ -227,4 +229,21 @@ h5 {
 
 .sugg-odd p {
 	margin: 0.9rem 0;
+}
+
+
+
+.index-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 16fr 1fr;
+}
+
+.index {
+	display: grid;
+	grid-column: 2 / -2;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.index p {
+	text-transform: capitalize;
 }
