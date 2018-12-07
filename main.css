@@ -235,15 +235,86 @@ h5 {
 
 .index-wrapper {
 	display: grid;
-	grid-template-columns: 1fr 16fr 1fr;
+	grid-template-columns: 1fr 22fr 1fr;
 }
 
 .index {
 	display: grid;
 	grid-column: 2 / -2;
 	grid-template-columns: repeat(6, 1fr);
+	border-bottom: 1px solid rgb(226,226,226);
+	padding-bottom: 0.5rem;
 }
 
 .index p {
 	text-transform: capitalize;
+	line-height: 1.7rem;
+	font-size: small;
+}
+
+.index h2 {
+	margin-top: 0;
+	font-size: small;
+}
+
+.index img {
+	width: 15%;
+}
+
+.index:before {
+	content: "";
+	border-top: 1px solid rgb(226,226,226);
+	border-bottom: 2px solid rgb(226,226,226);
+	height: 1px;
+}
+
+.logo {
+	grid-column: 1 / -1;
+	margin-top: 2rem;
+	margin-bottom: 0.8rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-flow: column;
+	align-items: center;	
+}
+
+
+
+.logo span {
+	font-size: x-small;
+	color: rgb(98, 136, 165);
+}
+
+.subscribe {
+	border-left: 1px solid rgb(226,226,226);
+	padding-left: 0.9rem;
+}
+
+.subscribe h1 {
+	margin: 0.8rem 0;
+	margin-left: 0.5rem;
+}
+
+.subscribe p {
+	font-size: x-small;
+}
+
+.subscribe p:nth-of-type(1) {
+	border-bottom: 1px solid rgb(226,226,226);
+	margin-bottom: 0.5rem;
+}
+
+
+
+.bottom-footer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+	margin-top: 0.7rem;
+}	
+
+.bottom-footer span {
+	margin: 0 0.5rem;
+	font-size: x-small;
+
 }
