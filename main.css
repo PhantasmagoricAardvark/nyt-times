@@ -50,7 +50,7 @@ table {
 section {
 	display: grid;
 	background-color: #fff;
-	grid-template-columns: 3fr 7fr 3fr;
+	grid-template-columns: 4fr 7fr 4fr;
 }
 
 .main-section > * {
@@ -79,6 +79,47 @@ span {
 	display: grid;
 	margin-bottom: 2rem;
 	margin-top: 0.5rem;
+}
+
+.author {
+	margin-bottom: 0;
+}
+
+.author a {
+	color: black;
+	text-decoration-color: grey;
+}
+
+
+
+.social-top {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-flow: column;
+	align-items: center;
+	margin: 1rem 0;
+}
+
+.social-top i {
+	width: 1rem;
+	color: black;
+}
+
+.social-top button {
+	margin-right: 0.8rem;
+	padding: 0.3rem;
+}
+
+.bubble,
+.bookmark {
+	font-size: 1.5rem;
+
+}
+
+.bubble {
+	transform: rotateY(180deg);
+	margin-right: 0;
+	margin-left: 1.4rem;
 }
 
 
@@ -261,16 +302,18 @@ h5 {
 	width: 15%;
 }
 
-.index:before {
-	content: "";
+.border {
+	margin-top: 2rem;
 	border-top: 1px solid rgb(226,226,226);
 	border-bottom: 2px solid rgb(226,226,226);
 	height: 1px;
+	grid-column: 1 / -1;
 }
+
 
 .logo {
 	grid-column: 1 / -1;
-	margin-top: 2rem;
+	margin-top: 0.5rem;
 	margin-bottom: 0.8rem;
 	display: grid;
 	grid-template-columns: 1fr;
